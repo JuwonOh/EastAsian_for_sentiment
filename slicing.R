@@ -24,6 +24,10 @@ wp <- news_data %>%
   filter(source == "wp") %>% 
   select('id', "date", "content", "title")
 
+cnn <- news_data %>%  
+  filter(source == "cnn") %>% 
+  select('id', "date", "content", "title")
+
 wsj <- news_data %>% 
   filter(source == "wsj") %>% 
   select('id', "date", "title") 
@@ -67,8 +71,10 @@ sentence_slice <- function(df){
 fox_s <- sentence_slice(fox)
 nyt_s <- sentence_slice(nyt)
 wp_s <- sentence_slice(wp)
+cnn_s <- sentence_slice(cnn)
 
 write.csv(fox_s, "fox_all_sentence.csv")
 write.csv(wp_s, "wp_all_sentence.csv")
 write.csv(nyt_s, "nyt_all_sentence.csv")
 write.csv(wsj_s, "wsj_all_sentence.csv")
+write.csv(cnn_s, "cnn_all_sentence.csv")
