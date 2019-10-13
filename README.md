@@ -8,7 +8,7 @@ This is an analysis of the data of US media companies in China, Korea and Japan.
 
 ## Sentiment analysis method
 
-사용한 sentiment analysis 방법은 VADER sentiment analysis와 supervised learning입니다.
+The sentiment analysis methods used are VADER sentiment analysis and supervised learning.
 
 - VADER sentiment analysis
 
